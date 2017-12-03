@@ -1,0 +1,36 @@
+#include"stdio.h"
+void main()
+{
+	int a[100] = { 0 }, i, j;
+	char c;
+	while ((c = getchar()) != '\n')   /*获取字符并统计每个字母出现次数*/
+		for (i = 65; i <= 90; i++)
+			if (c == i || c == i + 32) a[i]++;
+	for (j = 65; j <= 90; j++)  /*输出统计信息*/
+		if (a[j]>0) printf("%c:%-3d\n", j, a[j]);
+}
+
+#include<stdio.h>
+void stat(char sten[],int ch[26])
+{   int i
+    for (i = 65; i <= 90; i++)
+    if (str[] == i || str[]== i + 32) ch[i-65]++
+    return(ch[i-26])
+    }
+int main()
+{
+    char sten[100];
+    int ch[26]={0},i,j;
+    gets(str);
+    for(i=0;i<99;i++)
+       stat(sten[i],ch[]);
+    for(i=0;i<26;i++)
+       {
+          if(a[i]!=0)   
+           {
+             j=i+65;
+             printf("%c:-%d\n",j,a[i]);
+            }
+        }
+    return 0;
+}
